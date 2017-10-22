@@ -1,3 +1,21 @@
-* {
-    margin: auto;
+.main {
+    margin: 0 auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+* { 
+    outline: 3px solid black;
+}
+
+.home{
+    background-image:"images/hynek.jpg";
+}
+
+.home_intro_image{
+    position: relative; 
+    width: 100%; /* for IE 6 */
+}
+
+h1:hover{
+    background: #CE0C0C;
 }
