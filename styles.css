@@ -3,10 +3,6 @@
     -webkit-font-smoothing: antialiased;
 }
 
-* { 
-    outline: 3px solid black;
-}
-
 .home{
     background-image:"images/hynek.jpg";
 }
@@ -18,4 +14,23 @@
 
 h1:hover{
     background: #CE0C0C;
+}
+
+h2{
+    font-style: 18px;
+}
+
+/* Prevents collapsing of float */
+.group:before,
+.group:after {
+    content: " ";
+    display: table;
+}
+/* Compatibility check */
+.group:after{
+    clear: both;
+}
+/* Compatibility check */
+.group{ 
+    *zoom: 1;
 }
