@@ -1,24 +1,12 @@
-.main {
-    margin: 0 auto;
-    -webkit-font-smoothing: antialiased;
+
+
+li {
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.home{
-    background-image:"images/hynek.jpg";
-}
 
-.home_intro_image{
-    position: relative; 
-    width: 100%; /* for IE 6 */
-}
-
-h1:hover{
-    background: #CE0C0C;
-}
-
-h2{
-    font-style: 18px;
-}
 
 /* Prevents collapsing of float */
 .group:before,
