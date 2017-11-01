@@ -1,3 +1,6 @@
+*{
+    outline: 3px solid black;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -48,11 +51,58 @@ table {
 }
 /* end of CSS reset */
 
-ul{
-   display: inline-block;
-   height: 100%;
-   width: 100%;
+/* some formalities first */
+body{
+    font: normal 18px/30px 'Source Sans Pro', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
     text-decoration: none;
+}
+
+/* Prevents collapsing of float */
+.group:before,
+.group:after {
+    content: " ";
+    display: table;
+}
+/* Compatibility check */
+.group:after{
+    clear: both;
+}
+/* Compatibility check */
+.group{ 
+    *zoom: 1;
+}
+
+/* end of  formalities  */
+
+nav{
+    position: fixed;
+}
+
+.navigation {
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.fa {
+    vertical-align: middle;
+}
+
+.navigation a {
+    float: left;
+    text-transform: uppercase;
+    text-align: center;
+    color: rgb(5, 4, 4);
+}
+
+.navigation .fa  {
+    font-size: 50px;
+    margin-right: 20px;
+    margin-left: 20px;
+    color: rgb(129, 14, 14);
 }
 
 .image{
@@ -74,6 +124,12 @@ ul{
     padding-right: 25%;
 }
 
+.signature{
+    max-width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
 .photography{
     display: block;
     padding-left: 25%;
@@ -81,33 +137,6 @@ ul{
 }
 
 footer{
-    display: inline-block;
+    float: left;
 }
 
-/* Prevents collapsing of float */
-.group:before,
-.group:after {
-    content: " ";
-    display: table;
-}
-/* Compatibility check */
-.group:after{
-    clear: both;
-}
-/* Compatibility check */
-.group{ 
-    *zoom: 1;
-}
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-nav,
-section {
-  display: block;
-}
