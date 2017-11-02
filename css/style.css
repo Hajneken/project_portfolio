@@ -78,9 +78,6 @@ a {
 
 /* end of  formalities  */
 
-nav{
-    position: fixed;
-}
 
 .navigation {
     margin-left: 25%;
@@ -105,7 +102,7 @@ nav{
     color: rgb(129, 14, 14);
 }
 
-.image{
+.image {
     display: block;
     max-height: auto;
     max-width: 50%;
@@ -113,7 +110,7 @@ nav{
     padding-right: 25%;
 }
 
-.moto{
+.moto {
     display: block;
     padding-top: 30px;
     padding-bottom: 30px;
@@ -124,13 +121,13 @@ nav{
     padding-right: 25%;
 }
 
-.signature{
+.signature {
     max-width: 50%;
     margin-left: 25%;
     margin-right: 25%;
 }
 
-.photography{
+.photography {
     display: block;
     padding-left: 25%;
     padding-right: 25%;
