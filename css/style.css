@@ -1,6 +1,6 @@
-*{
+/* *{
     outline: 3px solid black;
-}
+} */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -52,8 +52,9 @@ table {
 /* end of CSS reset */
 
 /* some formalities first */
-body{
+html{
     font: normal 18px/30px 'Source Sans Pro', sans-serif;
+    margin: 0 auto;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -78,27 +79,41 @@ a {
 
 /* end of  formalities  */
 
-
 .navigation {
-    margin-left: 25%;
-    margin-right: 25%;
+    width: 50%;
+    margin-left: 30%;
+    margin-right: 20%;
+    margin-top: 12px;
 }
 
-.fa {
+#quote {
+    font-style: italic;
+    -webkit-font-smoothing: antialiased;
+}
+
+.fa     {
     vertical-align: middle;
+}
+
+.menu  {
+    border: solid;
+    
 }
 
 .navigation a {
     float: left;
     text-transform: uppercase;
     text-align: center;
-    color: rgb(5, 4, 4);
+}
+
+.menu a:hover {
+    color: red;
 }
 
 .navigation .fa  {
     font-size: 50px;
-    margin-right: 20px;
-    margin-left: 20px;
+    margin-right: 5px;
+    margin-left: 15px;  
     color: rgb(129, 14, 14);
 }
 
@@ -122,9 +137,8 @@ a {
 }
 
 .signature {
-    max-width: 50%;
-    margin-left: 25%;
-    margin-right: 25%;
+    display: inline;
+    position: absolute;
 }
 
 .photography {
@@ -133,7 +147,9 @@ a {
     padding-right: 25%;
 }
 
-footer{
+footer {
     float: left;
+    margin-left: 25%;
+    margin-right: 25%;
 }
 
