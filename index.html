@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="eng">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -21,61 +21,59 @@
 <body>
 
     <header>
-        <div class="nav-bar">
-            <div class="container">
-                <nav>
-                    <ul class="menu navigation">
-                        <li>
-                            <a href="#">
-                                <i class="fa fa-home" aria-hidden="true"></i>Home</a>
-                        </li>
-                        <li>
-                            <a href="#Code">
-                                <i class="fa fa-code" aria-hidden="true"></i>Code</a>
-                        </li>
-                        <li>
-                            <a href="#Photo">
-                                <i class="fa fa-camera" aria-hidden="true"></i>Photography</a>
-                        </li>
-                        <li>
-                            <a href="#CV">
-                                <i class="fa fa-envelope-o" aria-hidden="true"></i>CV</a>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#Contact">
-                                <i class="fa fa-envelope-o" aria-hidden="true"></i>Contact</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
 
+        <nav id="Menu">
+            <ul class="navigation">
+                <li>
+                    <a href="#Home">
+                        <i class="fa fa-home" aria-hidden="true"></i>Home</a>
+                </li>
+                <li>
+                    <a href="#Code">
+                        <i class="fa fa-code" aria-hidden="true"></i>Code</a>
+                </li>
+                <li>
+                    <a href="#Photo">
+                        <i class="fa fa-camera" aria-hidden="true"></i>Photography</a>
+                </li>
+                <li>
+                    <a href="#CV">
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i>CV</a>
+                </li>
+                <li>
+                    <a href="#Contact">
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i>Contact</a>
+                </li>
+            </ul>
+        </nav>
     </header>
 
-    <section class="home">
+    <section id="Home" class="home">
         <!-- červené písmo, černé pozadí  -->
-        <img class="image" src="images/Hynek_landing.jpg" alt="A headshot of Hynek Zemanec" height="auto" width="auto">
-        <img class="signature" src="images/sign.svg" alt="A signature of Hynek Zemanec" height="auto" width="auto">
+        <img class="image" src="images/hynek_landing.png" alt="A headshot of Hynek Zemanec">
+        <img class="signature" src="images/sign.svg" alt="A signature of Hynek Zemanec">
+        <h1>Hynek Zemanec</h1>
     </section>
     <!-- end of home -->
 
-    <section class="moto">
+    <section class="section moto">
         <h2 id="quote">
             <i>"Perfection is achieved not when there is nothing more to add, but when there is nothing left to take away"</i>
         </h2>
     </section>
     <!-- end of moto -->
 
-    <section id="Code" class="web">
+    <section id="Code" class="section web">
+        <h2>Web Dev &amp; Code</h2>
+        <iframe src="http://veterinamaj.cz/"></iframe>
         <div class="container">
             <!-- veterinamaj.cz -->
         </div>
     </section>
     <!-- end of web -->
 
-    <section id="Photo" class="photography">
-        <p>This is a photography section.</p>
+    <section id="Photo" class="section photography">
+        <h2>Photography</h2>
         <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-version="7" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
             <div style="padding:8px;">
                 <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:62.5% 0; text-align:center; width:100%;">
@@ -176,18 +174,21 @@
     </section>
     <!-- end of photography -->
 
-    <section id="CV">
+    <section id="section CV">
         <!-- CV here -->
+        <h2>Curriculum Vitae</h2>
     </section>
     <!-- end of CV -->
 
     <!-- start of contact -->
-    <section id="Contact"></section>
-    <form action="#" method="POST" class="#">
-        <input type="email" name="email" placeholder="@" required>
-        <textarea name="message" id="message" cols="30" rows="10" placeholder="Message" required></textarea>
-        <button>Send</button>
-    </form>
+    <section id="section Contact">
+        <h2>Contact</h2>
+        <form action="#" method="POST" class="#">
+            <input type="email" name="email" placeholder="@" required>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Message" required></textarea>
+            <button>Send</button>
+        </form>
+    </section>
     <!-- end of contact -->
 
 
@@ -212,14 +213,15 @@
                 <a href="https://www.instagram.com/hynekpics/">
                     <i class="fa fa-instagram" aria-hidden="true"></i>
                 </a>
-
             </div>
 
             <div class="author">
                 <p class="my_name">© Hynek Zemanec</p>
                 <p class="my_name">2017</p>
             </div>
+
         </div>
+
     </footer>
 </body>
 
