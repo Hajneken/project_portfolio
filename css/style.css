@@ -1,6 +1,239 @@
-/* *{
-    outline: 3px solid black;
-} */
+html {
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+
+/* Prevents collapsing of float */
+.group:before,
+.group:after {
+    content: " ";
+    display: table;
+}
+/* Compatibility check */
+.group:after{
+    clear: both;
+}
+/* Compatibility check */
+.group{ 
+    *zoom: 1;
+}
+
+/* some formalities first */
+body{
+    margin: 0 auto;
+ }
+
+a{
+    text-decoration: none;
+}
+
+h2{
+    font-family: "Source Sans Pro", sans-serif;
+    -webkit-font-smoothing: antialiased; 
+}
+
+
+/* end of  formalities  */
+
+
+
+
+
+
+
+
+
+
+#Menu{
+    display: block;
+    width: 100%;
+    height: 55px;
+    background-color: #000000;
+    padding-left: 25%;
+    padding-right: 25%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 3;
+    font-weight: bold;
+
+}
+
+.navigation li {
+    list-style-type: none;
+    float: left;
+}
+
+.navigation a{
+    font-family: Source Sans Pro, sans-serif;
+    -webkit-font-smoothing: antialiased; 
+    text-transform: uppercase;
+    color: white;
+    padding: 10px;
+    padding-left: 16px;
+    display: block;
+    background-color: black;
+    text-align: center;
+}
+
+.navigation .fa {
+    font-size: 2.2em;
+}
+
+.navigation a:hover{
+    -webkit-transition: all 750ms ease;
+    -moz-transition: all 750ms ease;
+    -ms-transition: all 750ms ease;
+    -o-transition: all 750ms ease;
+    transition: all 750ms ease;
+    color: red;
+    background-color: #222;
+}
+
+.navigation .fa:hover{
+    -webkit-transition: all 750ms ease;
+    -moz-transition: all 750ms ease;
+    -ms-transition: all 750ms ease;
+    -o-transition: all 750ms ease;
+    transition: all 750ms ease;
+    color: white;  
+}
+
+.fa     {
+    vertical-align: middle;
+}
+
+.navigation .fa {
+    padding-right: 15px;
+    padding-left: 10px;
+    color: rgb(146, 14, 14);
+}
+
+.home h1{
+    position: relative;
+    font-weight: bold;
+    float: left;
+    font-size: 180%;
+    margin-left: 25%;
+    margin-top: -14.8%;
+    font-family: 'Source Sans Pro', sans-serif; 
+    -webkit-font-smoothing: antialiased; 
+}
+
+.signature{
+    position: relative;
+    float: right;
+    width: 7%;
+    height: auto;
+    /* top: -18%; */
+    /* left: 70%; */
+    margin-top: -16%;
+    margin-right: 27%;
+}
+
+.home  {
+background: rgba(224,224,224,1);/* Old Browsers */
+background: -moz-linear-gradient(top, rgba(224,224,224,1) 0%, rgba(242,242,242,1) 52%, rgba(242,242,242,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(224,224,224,1)), color-stop(52%, rgba(242,242,242,1)), color-stop(100%, rgba(242,242,242,1)));/* Chrome, Safari4+ */
+background: -webkit-linear-gradient(top, rgba(224,224,224,1) 0%, rgba(242,242,242,1) 52%, rgba(242,242,242,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, rgba(224,224,224,1) 0%, rgba(242,242,242,1) 52%, rgba(242,242,242,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, rgba(224,224,224,1) 0%, rgba(242,242,242,1) 52%, rgba(242,242,242,1) 100%); /* IE 10+ */
+background: linear-gradient(to bottom, rgba(224,224,224,1) 0%, rgba(242,242,242,1) 52%, rgba(242,242,242,1) 100%);/* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0e0e0', endColorstr='#f2f2f2', GradientType=0 );/* IE6-9 */
+}
+
+.image {
+    background-size: cover;
+    display: block;
+    max-height: auto;
+    max-width: 50%;
+   margin-left: 25%;
+   margin-right: 25%;
+   padding-top: 50px;
+}
+
+.moto {
+    display: block;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color:#191919;
+    color: white;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+.moto i{
+    font-style  : italic;
+    font-family: 'Source Sans Pro', sans-serif; 
+    -webkit-font-smoothing: antialiased; 
+}
+
+#Code {
+    width: 80%;
+    margin: 0%10%;
+    text-align: center;
+ background-color: rgb(216, 216, 66);
+}
+
+#Photo {
+    width: 80%;
+    margin: 0%10%;
+    text-align: center;
+    background-color: red;
+    float: left;
+}
+
+#CV{
+    width: 80%;
+    margin: 0%10%;
+    text-align: center;
+    background-color: blue;
+}
+
+#Contact{
+    width: 80%;
+    margin: 0%10%;
+    text-align: center;
+    background-color: green;
+}
+
+.container{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -25,7 +258,6 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -51,191 +283,3 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-/* end of CSS reset */
-
-/* Prevents collapsing of float */
-.group:before,
-.group:after {
-    content: " ";
-    display: table;
-}
-/* Compatibility check */
-.group:after{
-    clear: both;
-}
-/* Compatibility check */
-.group{ 
-    *zoom: 1;
-}
-
-/* some formalities first */
-body{
-    font: normal 18px/30px 'Source Sans Pro', sans-serif;
-    margin: 0 auto;
-    -webkit-font-smoothing: antialiased;
-}
-
-a{
-    text-decoration: none;
-}
-
-/* end of  formalities  */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.navigation{
-    height: auto;
-    width: 100%;
-}
-
-.navigation ul {
-    list-style-type: none;
-    top: 0;
-    position: fixed;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
-.navigation li {
-    float: left;
-    /* border: black solid; */
-}
-
-.navigation a{
-    text-transform: uppercase;
-    text-decoration: none;
-    color: white;
-    padding: 14px 16px;
-    display: block;
-    background-color: rgb(158, 158, 158);
-    text-align: center;
-}
-
-.navigation a:hover{
-    color: red;
-    background-color: black;
-}
-
-.fa     {
-    vertical-align: middle;
-}
-
-.navigation .fa {
-    padding-right: 15px;
-    padding-left: 10px;
-    color: rgb(146, 14, 14);
-}
-
-
-
-
-/* .menu a:hover {
-    color: red;
-} */
-
-/* .navigation .fa  {
-    font-size: 50px;
-    margin-right: 5px;
-    margin-left: 15px;  
-    color: rgb(129, 14, 14);
-    display: inline-block;
-} */
-
-.home h1{
-    position: relative;
-    float: left;
-    z-index: 2;
-    /* top: 131%; */
-    /* left: 22%; */
-    font-size: 180%;
-    margin-left: 25%;
-    margin-top: -14.8%;
-}
-
-.signature{
-    position: relative;
-    float: right;
-    z-index: 2;
-    width: 7%;
-    height: auto;
-    /* top: -18%; */
-    /* left: 70%; */
-    margin-top: -16%;
-    margin-right: 27%;
-}
-
-#quote {
-    font-style: italic;
-    -webkit-font-smoothing: antialiased;
-}
-
-.section {
-    width: 75%;
-    margin: 0 auto;
-}
-
-.home  {
-background: rgba(224,224,224,1);/* Old Browsers */
-background: -moz-linear-gradient(top, rgba(224,224,224,1) 0%, rgba(242,242,242,1) 52%, rgba(242,242,242,1) 100%); /* FF3.6+ */
-background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(224,224,224,1)), color-stop(52%, rgba(242,242,242,1)), color-stop(100%, rgba(242,242,242,1)));/* Chrome, Safari4+ */
-background: -webkit-linear-gradient(top, rgba(224,224,224,1) 0%, rgba(242,242,242,1) 52%, rgba(242,242,242,1) 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top, rgba(224,224,224,1) 0%, rgba(242,242,242,1) 52%, rgba(242,242,242,1) 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top, rgba(224,224,224,1) 0%, rgba(242,242,242,1) 52%, rgba(242,242,242,1) 100%); /* IE 10+ */
-background: linear-gradient(to bottom, rgba(224,224,224,1) 0%, rgba(242,242,242,1) 52%, rgba(242,242,242,1) 100%);/* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0e0e0', endColorstr='#f2f2f2', GradientType=0 );/* IE6-9 */
-
-}
-
-.image {
-    display: block;
-    max-height: auto;
-    max-width: 50%;
-    padding-left: 25%;
-    padding-right: 25%;
-    margin-top: 0;
-}
-
-.moto {
-    display: block;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    background-color: rgba(0, 0, 0, 0.918);
-    -webkit-font-smoothing: antialiased; 
-    color: white;
-    padding-left: 25%;
-    padding-right: 25%;
-}
-
-.photography {
-    display: block;
-    padding-left: 25%;
-    padding-right: 25%;
-}
-
-footer {
-    float: left;
-    margin-left: 25%;
-    margin-right: 25%;
-}
-
