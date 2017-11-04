@@ -45,6 +45,31 @@ h2{
     vertical-align: middle;
 }
 
+hr.clear{
+    clear: both;
+    height: 1px;
+    border: none;
+    margin: -1em 0 0 0;
+    visibility: hidden;
+}
+
+button{
+    font-size: 3em;
+    font-family: 'Source Sans Pro', sans-serif; 
+    font-weight: bold;
+    -webkit-font-smoothing: antialiased; 
+    border-radius: 8px;
+}
+
+button:hover {
+    background-color: white;
+    -webkit-transition: all 750ms ease;
+    -moz-transition: all 750ms ease;
+    -ms-transition: all 750ms ease;
+    -o-transition: all 750ms ease;
+    transition: all 750ms ease;
+}
+
 /* end of  formalities  */
 
 
@@ -157,70 +182,91 @@ h2{
     padding-top: 120px;
     padding-bottom: 60px;
 }
+.wrapper{
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
 
-#Vet_website {
- border-radius: 8px;
+.wrapper-left {
+    float: left;
+    width: 50%;    
+    padding-top: 1%;
+}
+
+.wrapper-right {
+   padding-bottom: 10%;
+   padding-top: 1%;
+}
+
+/* .fa-git-square{
+    font-size: 1em;
+} */
+
+#Code h3{
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-size: 2em;
+}
+
+#Code p{
+    font-size: 1.2em;
+}
+
+.wrapper2{
+    width: 100%;
+}
+
+.wrapper2 img {
+float: left;
+ border-radius: 10px;
+ border-style: 10px;
  width: 50%;
  height: auto;
 }
 
 
-button{
-    font-size: 3em;
-    font-family: 'Source Sans Pro', sans-serif; 
-    font-weight: bold;
-    -webkit-font-smoothing: antialiased; 
-    margin-top: 10%;
-    padding: 12px 12px;
-    border-radius: 8px;
+
+.wrapper2 button{
+    margin-top: 12%;
+    background-color: black;
+    width: 30%;
 }
 
-button:hover {
-    background-color: white;
+.wrapper2 a{
+    color:white;
+}
+
+.wrapper2 a:hover{
+    color: black;
     -webkit-transition: all 750ms ease;
     -moz-transition: all 750ms ease;
     -ms-transition: all 750ms ease;
     -o-transition: all 750ms ease;
     transition: all 750ms ease;
 }
-
-
+.wrapper2 button:hover{
+    width: 50%; 
+    background-color: white;
+}
 
 #Moto{
-    display: block;
     text-align: center;
     width: 100%;
     padding-top: 30px;
     padding-bottom: 30px;
-    background-color:#191919;
-    color: white;
+    background-color:#000000;
 }
 
-.moto i{
+#Moto i{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.801);
     text-align: center; 
-    font-style  : italic;
+    font-style : italic;
     font-family: 'Source Sans Pro', sans-serif; 
     -webkit-font-smoothing: antialiased; 
 }
-
-hr.clear{
-    clear: both;
-    height: 1px;
-    border: none;
-    margin: -1em 0 0 0;
-    visibility: hidden;
-}
-
-#Photo {
-    width: 100%;
-    text-align: center;
-    background-color: rgb(77, 67, 67);
-}
-
-#Photo h2{
-    padding-top: 120px;
-}
-
 
 #CV{
     width: 100%;
@@ -288,7 +334,23 @@ hr.clear{
     color: rgb(197, 38, 38);
 }
 
+#Photo{
+    text-align: center;
+}
 
+#Photo h2{
+    padding: 120px;
+}
+
+.photography{
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.insta-left{
+    width: 50%;
+}
 
 #Contact{
     width: 80%;
@@ -296,12 +358,7 @@ hr.clear{
     text-align: center;
     background-color: green;
 }
-/* 
-.container{
-    width: 100%;
-    padding-right: 25%;
-    padding-left: 25%;
-} */
+
 
 
 
