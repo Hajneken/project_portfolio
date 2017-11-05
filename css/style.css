@@ -24,7 +24,7 @@ a{
 }
 
 /* some formalities first */
-body{
+html{
     margin: 0 auto;
  }
 
@@ -134,14 +134,14 @@ button:hover {
 }
 
 .home, #Code  {
-    background: rgba(224,224,224,1);/* Old Browsers */
-    background: -moz-linear-gradient(top, rgba(224,224,224,1) 0%, rgba(242,242,242,1) 52%, rgba(242,242,242,1) 100%); /* FF3.6+ */
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(224,224,224,1)), color-stop(52%, rgba(242,242,242,1)), color-stop(100%, rgba(242,242,242,1)));/* Chrome, Safari4+ */
-    background: -webkit-linear-gradient(top, rgba(224,224,224,1) 0%, rgba(242,242,242,1) 52%, rgba(242,242,242,1) 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, rgba(224,224,224,1) 0%, rgba(242,242,242,1) 52%, rgba(242,242,242,1) 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, rgba(224,224,224,1) 0%, rgba(242,242,242,1) 52%, rgba(242,242,242,1) 100%); /* IE 10+ */
-    background: linear-gradient(to bottom, rgba(224,224,224,1) 0%, rgba(242,242,242,1) 52%, rgba(242,242,242,1) 100%);/* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0e0e0', endColorstr='#f2f2f2', GradientType=0 );/* IE6-9 */
+    background: rgba(226,226,226,1);
+    background: -moz-linear-gradient(top, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 0%, rgba(209,209,209,1) 13%, rgba(253,253,253,1) 99%, rgba(254,254,254,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(226,226,226,1)), color-stop(0%, rgba(219,219,219,1)), color-stop(13%, rgba(209,209,209,1)), color-stop(99%, rgba(253,253,253,1)), color-stop(100%, rgba(254,254,254,1)));
+    background: -webkit-linear-gradient(top, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 0%, rgba(209,209,209,1) 13%, rgba(253,253,253,1) 99%, rgba(254,254,254,1) 100%);
+    background: -o-linear-gradient(top, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 0%, rgba(209,209,209,1) 13%, rgba(253,253,253,1) 99%, rgba(254,254,254,1) 100%);
+    background: -ms-linear-gradient(top, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 0%, rgba(209,209,209,1) 13%, rgba(253,253,253,1) 99%, rgba(254,254,254,1) 100%);
+    background: linear-gradient(to bottom, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 0%, rgba(209,209,209,1) 13%, rgba(253,253,253,1) 99%, rgba(254,254,254,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe', GradientType=0 );
     }
 
 .home h1{
@@ -336,27 +336,99 @@ float: left;
 
 #Photo{
     text-align: center;
+    background-color: rgb(59, 59, 59);
 }
 
 #Photo h2{
     padding: 120px;
+    color: rgba(255, 255, 255, 0.808);
 }
-
 .photography{
     width: 90%;
     margin-left: 5%;
     margin-right: 5%;
 }
-
-.insta-left{
-    width: 50%;
+.photograph{
+   float: left;
+   width: 50%;
 }
 
-#Contact{
-    width: 80%;
-    margin: 0%10%;
+#Photo p{
+    font-size: 1.6em;
+    color: white;
+    padding-top: 3em;
+    padding-bottom: 0.5em;
+}
+
+#Photo p{
+    font-weight: bold;
+}
+
+#Photo button{
+    width:33%;
+    margin-bottom: 2em;
+    background: #fffffd;
+    border: black solid;
+}
+
+#Photo a{
+    color: black;
+}
+
+#Photo button:hover{
+    width: 100%;
+    border-color: white;
+    background: -moz-linear-gradient(left, rgba(249,236,50,1) 0%, rgba(238,42,124,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(249,236,50,1)), color-stop(100%, rgba(238,42,124,1)));
+    background: -webkit-linear-gradient(left, rgba(249,236,50,1) 0%, rgba(238,42,124,1) 100%);
+    background: -o-linear-gradient(left, rgba(249,236,50,1) 0%, rgba(238,42,124,1) 100%);
+    background: -ms-linear-gradient(left, rgba(249,236,50,1) 0%, rgba(238,42,124,1) 100%);
+    background: linear-gradient(to right, rgba(249,236,50,1) 0%, rgba(238,42,124,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9ec32', endColorstr='#ee2a7c', GradientType=1 );
+    -webkit-transition: all 2000ms ease;
+    -moz-transition: all 2000ms ease;
+    -ms-transition: all 2000ms ease;
+    -o-transition: all 2000ms ease;
+    transition: all 2000ms ease;
+}
+
+#Contact { 
+    margin: 0 auto;
     text-align: center;
-    background-color: green;
+}
+
+#Contact h2{
+    padding-top: 120px;
+    margin-bottom: 1em;
+    font-size: 4em;
+}
+
+#Contact p{
+    font-size: 2em;
+    margin: 1em;
+}
+
+#Contact i{
+    font-size: 5em;
+    color: black;
+}
+
+#Contact i:hover{
+    font-size: 6em;
+    color: black;
+    -webkit-transition: all 600ms ease;
+    -moz-transition: all 600ms ease;
+    -ms-transition: all 600ms ease;
+    -o-transition: all 600ms ease;
+    transition: all 600ms ease;
+}
+
+footer{
+    text-align: center;
+}
+
+footer p{
+    padding: 2px;
 }
 
 
