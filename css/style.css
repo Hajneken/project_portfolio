@@ -225,29 +225,24 @@ float: left;
  height: auto;
 }
 
-
-
-.wrapper2 button{
-    margin-top: 12%;
+.almost-button{
+    display: inline-block;
+    font-size: 3em;
+    border: solid black;
+    border-radius: 8px;
     background-color: black;
-    width: 30%;
+    color: white;
 }
 
-.wrapper2 a{
-    color:white;
-}
-
-.wrapper2 a:hover{
-    color: black;
+.almost-button:hover{
+    color: black; 
+    background-color: white;
+    font-size: 5.3em;
     -webkit-transition: all 750ms ease;
     -moz-transition: all 750ms ease;
     -ms-transition: all 750ms ease;
     -o-transition: all 750ms ease;
     transition: all 750ms ease;
-}
-.wrapper2 button:hover{
-    width: 50%; 
-    background-color: white;
 }
 
 #Moto{
