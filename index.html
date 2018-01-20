@@ -6,14 +6,18 @@
     <meta name="author" content="Hynek Zemanec">
     <meta name="description" content="Portfolio and a personal website  of a Czech web developer, software engineer, designer and photographer Hynek Zemanec.">
     <meta name="keywords" content="portfolio,web,design, photography,html,css,html5,development">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <title>Hynek Zemanec</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/x-icon" href="images/cube.ico">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600&amp;subset=latin-ext" rel="stylesheet">
     <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/magnific.css">
     <!--[if lt IE 9]>
   <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
   <![endif]-->
@@ -151,14 +155,11 @@
 
     <!-- start of Photography section -->
     <section id="Photo">
-        <h2>Photography</h2>
-
-        <div class="photography">
-            <img class="photograph" src="images/Mountain_waterfall.jpg" alt="A waterfall in Iceland with a background of a mountain, known from the Game of Thrones Show">
-            <img class="photograph" src="images/Flames.jpg" alt="A flame artist spinning a fireball attached to the rope in Sri Lanka">
-            <img class="photograph" src="images/waterfall_iceland.jpg" alt="A waterfall in Iceland, one of the most iconic natural sights in Iceland.">
-            <img class="photograph" src="images/Waterfall1.jpg" alt="A waterfall in Iceland, behind which one can walk and possibly observe a rainbow.">
-            <hr class="clear">
+        <h2>Latest Photography</h2>
+        <div class="container">
+            <div id="instafeed" class="row gallery"></div>
+        </div>
+        <hr class="clear">
         </div>
 
 
@@ -205,6 +206,13 @@
         <p>©
             <a href="mailto:zemanech@yahoo.com?Message_From_Web">Hynek Zemanec</a> 2017</p>
     </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.0/jquery.slim.min.js"></script>
+    <script src="js/magnific.min.js"></script>
+    <script src="js/instafeed.min.js" type="text/javascript"></script>
+    <script src="js/custom.js"></script>
+
 </body>
 
 </html>
